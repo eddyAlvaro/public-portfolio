@@ -1,19 +1,20 @@
 type Props = {
   left: boolean;
   label: string;
+  icon?: React.ReactNode;
 };
 
-function IconStatic({ left, label }: Props) {
+function IconStatic({ left, label, icon }: Props) {
   const upperLabel = label.toUpperCase();
   return (
     <>
       <div
-        className={`fixed bottom-0 ${
-          left ? "left-8" : "right-8"
-        } text-white hidden md:block w-auto`}
+        className={`flex flex-col items-center justify-center fixed bottom-8 ${
+          left ? "left-10" : "right-10"
+        } text-white hidden md:flex text-[1.8rem]`}
       >
         <p>{upperLabel}</p>
-        <span className="flex justify-center w-full">a</span>
+        {icon}
       </div>
     </>
   );

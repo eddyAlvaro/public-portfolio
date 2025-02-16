@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@theme {
+  --color-default-purple: #ceb7ff;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../public/fonts/bebas_neue/BebasNeue-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Death Star";
+  src: url("../public/fonts/death_star/DeathStar.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: "Death Star";
+  src: url("../public/fonts/death_star/DeathStar.otf");
+  font-weight: normal;
+  font-style: border;
+} */
+
+* {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--color-default-purple);
+}
